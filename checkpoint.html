@@ -3,119 +3,69 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-        }
-        header, nav, main, footer {
-            padding: 20px;
-        }
-        nav ul {
-            list-style-type: none;
-            padding: 0;
-        }
-        nav ul li {
-            display: inline;
-            margin-right: 10px;
-        }
-        section {
-            margin-bottom: 40px;
-        }
-        footer {
-            background-color: #f1f1f1;
-            text-align: center;
-            padding: 10px 0;
-        }
-    </style>
+    <title>Mon Portfolio</title>
 </head>
 <body>
     <header>
-        <h1>Mon Portfolio</h1>
+        <nav>
+            <ul>
+                <li><a href="#accueil">Accueil</a></li>
+                <li><a href="#a-propos">À propos</a></li>
+                <li><a href="#travail">Travail</a></li>
+                <li><a href="#cv">CV</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
     </header>
-    
-    <nav>
-        <ul>
-            <li><a href="#accueil">Accueil</a></li>
-            <li><a href="#a-propos">À propos</a></li>
-            <li><a href="#travail">Travail</a></li>
-            <li><a href="#cv">CV</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
-    </nav>
-    
-    <main>
-        <section id="accueil">
-            <h2>Accueil</h2>
-            <p>Bienvenue sur mon portfolio en ligne ! Découvrez mes projets et mon parcours professionnel.</p>
-            <video controls>
-                <source src="video/portfolio.mp4" type="video/mp4">
-                Votre navigateur ne supporte pas la balise vidéo.
-            </video>
+
+    <div class="container">
+        <section id="accueil" class="section">
+            <h1>Bienvenue sur mon Portfolio</h1>
+            <p>Découvrez mon travail et apprenez-en plus sur moi.</p>
         </section>
-    
-        <section id="a-propos">
+
+        <section id="a-propos" class="section">
             <h2>À propos</h2>
-            <p>Je suis un développeur web passionné avec plusieurs années d'expérience dans la création de sites web et d'applications.</p>
+            <p>Je suis un développeur web passionné avec une expérience en création de sites web et d'applications.</p>
+            <video controls="" width="600" height="480" autoplay loop>
+                <source src="vidéo.mp4" type="video.mp4"/>
+            </video>
+            <audio controls="">
+                <source src="audio.mp3" type="audio.mp3"/>
+                <source src="audio.ogg" type="audio.ogg"/>
+            </audio>
         </section>
-    
-        <section id="travail">
+
+        <section id="travail" class="section">
             <h2>Travail</h2>
             <ul>
-                <li>Projet 1: <a href="projets/projet1.html">Description du projet 1</a></li>
-                <li>Projet 2: <a href="projets/projet2.html">Description du projet 2</a></li>
-                <li>Projet 3: <a href="projets/projet3.html">Description du projet 3</a></li>
+                <li>Projet 1: <a href="projet1.html">Lien vers le projet 1</a></li>
+                <li>Projet 2: <a href="projet2.html">Lien vers le projet 2</a></li>
+                <li>Projet 3: <a href="projet3.html">Lien vers le projet 3</a></li>
             </ul>
         </section>
-    
-        <section id="cv">
+
+        <section id="cv" class="section">
             <h2>CV</h2>
-            <table border="1">
-                <thead>
-                    <tr>
-                        <th>Année</th>
-                        <th>Poste</th>
-                        <th>Entreprise</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>2021 - Présent</td>
-                        <td>Développeur Senior</td>
-                        <td>TechCorp</td>
-                    </tr>
-                    <tr>
-                        <td>2018 - 2021</td>
-                        <td>Développeur Junior</td>
-                        <td>WebSolutions</td>
-                    </tr>
-                    <tr>
-                        <td>2015 - 2018</td>
-                        <td>Stagiaire</td>
-                        <td>StartupInc</td>
-                    </tr>
-                </tbody>
-            </table>
+            <p>Téléchargez mon CV : <a href="cv.pdf" download>CV PDF</a></p>
         </section>
-    
-        <section id="contact">
+
+        <section id="contact" class="section">
             <h2>Contact</h2>
-            <form action="/submit_form" method="post">
+            <form>
                 <label for="name">Nom:</label>
                 <input type="text" id="name" name="name" required><br><br>
                 <label for="email">Email:</label>
                 <input type="email" id="email" name="email" required><br><br>
                 <label for="message">Message:</label><br>
-                <textarea id="message" name="message" rows="4" cols="50" required></textarea><br><br>
+                <textarea id="message" name="message" rows="4" required></textarea><br><br>
                 <input type="submit" value="Envoyer">
             </form>
         </section>
-    </main>
-    
+    </div>
+
     <footer>
         <p>&copy; 2024 Mon Portfolio</p>
-    </footer> 
+    </footer>
 </body>
 </html>
